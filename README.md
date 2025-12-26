@@ -92,11 +92,22 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 ---
 ### Recall Value Medical Interpretation : 
 
-- This Model achieves a **High Recall of 98.97% for Pneumonia** on the Test Set, demonstrating strong sensitivity toward Pneumonia-Positive Cases.
-- In Medical screening tasks, Recall is critically important, as missing even a Single Disease case can be Dangerous.
-- Although an ideal recall value is close to **100%**, achieving perfect Recall is challenging due to practical limitations such as Dataset Variability and Computational constraints.
-- This Model is therefore designed to **Minimize False Negatives**, prioritizing patient safety over Conservative Predictions.
-- While Recall for the Normal class is comparatively lower, this reflects a **Safety-Oriented Design Choice** that emphasizes detecting pneumonia cases rather than risking missed diagnoses.
+> - This Model achieves a **High Recall of 98.97% for Pneumonia** on the,
+> - Test Set demonstrating strong sensitivity toward Pneumonia-Positive Cases.
+
+> - In Medical screening tasks, Recall is critically important,
+> - as missing even a Single Disease can be Dangerous.
+
+> - Although an ideal recall value is close to **100%**, 
+> - achieving perfect Recall is challenging  due to practical limitations
+> - such as Dataset Variability and Computational constraints.
+
+> - This Model is therefore designed to **Minimize False Negatives**, 
+> - prioritizing patient safety over Conservative Predictions.
+
+> - While Recall for the Normal class is comparatively lower, this reflects a
+> - **Safety-Oriented Design Choice**  that emphasizes detecting pneumonia cases
+> - cases rather than risking missed diagnoses.
 
 # Our Model Architecture :
     
@@ -145,7 +156,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
   
          streamlit run app.py
          
-  **4. Use This Below Test X-Ray image to make Prediction:**
+  **4. Test image for Prediction:**
 
        Use  my given link Dataset to get Test image or  use my assets folder
        to get bactarial and normal x ray image to make prediction.
@@ -157,7 +168,8 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
   - Uploaded Chest X-ray image.
   - Predicted class (**Normal / Pneumonia**).
   - Model confidence score.
-  - Enables users to **download and store prediction results**.                                      - of viewing or documentation
+  - Enables users to **download and store prediction results**.
+  - of viewing documentation.
 
 # How can you Contribute : 
 
