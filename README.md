@@ -34,6 +34,9 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 | **Validation Loss**     | **0.0734** |
 
 ---
+### Training learning Curve :
+
+ ![Training & Validation Learning Curves](BinaryTrainingCurves.jpeg)
 
 ### Test Set Performance (Unseen Data)
 
@@ -55,12 +58,11 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > - could not able to achive  **100 percent Recall value** . Since even missed while
 > - detecting only one time Disease  is **Dangerous in Medical Field** .
 
- - Although recall for the Normal class is lower,
- - the overall behavior reflects a **safety-oriented  design choice**,
- -  prioritizing detection of pneumonia cases.
+- Although recall for the Normal class is lower,
+- the overall behavior reflects a **safety-oriented  design choice**,
+- prioritizing detection of pneumonia cases.
 
-> **Note:**  
-> Final performance claims are based exclusively on **independent test data**. Training and validation metrics are reported only to illustrate learning behavior and are not used as indicators of real-world performance.
+
 
 
 
