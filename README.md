@@ -163,15 +163,11 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
        Use  my given link Dataset to get Test image or  use my assets folder
        to get bactarial and normal x ray image to make prediction.
   
-# Project Special Feature – Automated PDF Report
+# Project Special Feature – Automated PDF Report.
 
-- Automatically generates a **PDF Medical Report** after Model prediction.
-- The report includes:
-  - Uploaded Chest X-ray image.
-  - Predicted class (**Normal / Pneumonia**).
-  - Model confidence score.
-  - Enables users to **download and store prediction results**.
-  - of viewing documentation.
+## 🫁 Chest X-Ray Diagnostic Report (Sample)
+
+![Chest X-Ray Report](chest%20X-Ray%20pdf.jpg)
 
 # How can you Contribute : 
 
