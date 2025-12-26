@@ -161,11 +161,11 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
   - Uploaded Chest X-ray image.
   - Predicted class (**Normal / Pneumonia**).
   - Model confidence score.
-- Enables users to **download and store prediction results** for offline viewing or documentation.
+  - Enables users to **download and store prediction results**.                                      - of viewing or documentation
 
 # How can you Contribute : 
 
-If you would like to contribute to this project, please follow these steps:
+> If you would like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or fix.
