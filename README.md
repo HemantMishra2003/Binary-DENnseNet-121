@@ -95,10 +95,10 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > - This Model achieves a **High Recall of 98.97% for Pneumonia** on the,
 > - Test Set demonstrating strong sensitivity toward Pneumonia-Positive Cases.
 
-> - In Medical screening tasks, Recall is critically important,
+> - In Medical Screening tasks, Recall is critically important,
 > - as missing even a Single Disease can be Dangerous.
 
-> - Although an ideal recall value is close to **100%**, 
+> - Although an ideal Recall Value is close to **100%**,but 
 > - achieving perfect Recall is challenging  due to practical limitations
 > - such as Dataset Variability and Computational constraints.
 
@@ -107,7 +107,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 > - While Recall for the Normal class is comparatively lower, this reflects a
 > - **Safety-Oriented Design Choice**  that emphasizes detecting pneumonia cases
-> - cases rather than risking missed diagnoses.
+> - cases rather than risking missed Diagnosis.
 
 # Our Model Architecture :
     
