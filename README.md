@@ -37,14 +37,14 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 ### Training , Validation Learning Curves :    
 
     Accuracy
-    1.00 |                           ________ Train
-    0.99 |                      _____/_______ Validation
-    0.98 |                 _____/______
-    0.97 |            _____/______
-    0.96 |       _____/______
-    0.95 |  ____/______
-    0.94 |_/______
-         +-----------------------------------------
+    1.00 |
+    0.99 |                                           
+    0.98 |                 _______/----------- **Training Learning Curve ACcuracy** 
+    0.97 |            _____/------------------ **Validation Learning Curve ACcuracy** 
+    0.96 |       _____/
+    0.95 |  ____/
+    0.94 |_/
+     +-----------------------------------------
         1   3   5   7   9   11  13  15  17  19
                          Epochs
 
