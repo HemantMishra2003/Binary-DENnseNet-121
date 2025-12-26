@@ -159,11 +159,6 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
        Use  my given link Dataset to get Test image or  use my assets folder
        to get bactarial and normal x ray image to make prediction.
   
-# Project Special Feature – Automated PDF Report.
-
-## 🫁 Chest X-Ray Report(Sample)
-
-![Chest X-Ray Report](chest%20X%20-Ray%20pdf.jpg)
 
 # How can you Contribute : 
 
