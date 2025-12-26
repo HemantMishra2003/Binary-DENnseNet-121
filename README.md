@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 **Trained Model Link :** https://drive.google.com/file/d/1Wh1whE0yodOiUaLHr1pn2NU-_a6M4Wu-/view?usp=drivesdk
 
-## 🫁 Pneumonia Detection using Deep Learning.
+##### 🫁 Pneumonia Detection using Deep Learning.
 
 > This Pneumonia Detection System is a medically oriented project
 > designed to assist in the classification of chest X-ray images
@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > Test datasets to present a transparent and comprehensive view
 > of its learning behavior and real-world generalization performance.
 
-#### Training & Validation Performance
+# Training & Validation Performance
 
 
   | **Metric**              | **Value** |
