@@ -130,7 +130,16 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                                       v
                            [ Best Model Saved ]
 
+                           
+ # Installation & Setup : 
  
+   **Follow the steps below to run this project locally and test the pneumonia detection model**
+
+    **1. Clone the repository:**
+      git clone https://github.com/HemantMishra2003/Binary-DENnseNet-121.git
+      cd Binary-DENnseNet-121
+
+
 
     
 
