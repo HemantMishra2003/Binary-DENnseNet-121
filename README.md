@@ -8,7 +8,14 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 ## 🫁 Pneumonia Detection using Deep Learning
 
-This Pneumonia Detection System is a medically oriented project designed to assist in the classification of chest X-ray images into Normal and Pneumonia categories with high reliability. The system is developed using transfer learning with DenseNet-121, enabling effective feature extraction and strong generalization on clinical imaging data.
+> This Pneumonia Detection System is a medically oriented project
+> designed to assist in the classification of chest X-ray images
+> into Normal and Pneumonia categories with high reliability.
+> The system is developed using **transfer learning** based on the
+> **Pretrained model** **DenseNet-121**,which is  trained over
+> the **millions  of feature image and thousands of classes** , this 
+> enables  effective feature extraction and
+> strong generalization on clinical imaging data.
 
 
  
