@@ -130,7 +130,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                            
  # Installation & Setup : 
  
-  ### Follow the steps below to Run this project locally and test the pneumonia detection model.
+  ### Follow the steps below to Run this project locally and test the Pneumonia Detection Model.
 
   **1. Clone this Repository:**
         
@@ -161,12 +161,12 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 # How can you Contribute : 
 
-> If you would like to contribute to this project, please follow these steps:
+> If you would like to contribute to this Project, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch for your feature or fix.
+2. Create a New Branch for your feature or fix.
 3. Make your changes with clear and meaningful commits.
-4. Submit a pull request describing your changes.
+4. Submit a Pull Request describing your changes.
 
 > Suggestions for improvements, bug fixes, documentation enhancements, 
 > and feature ideas are always welcome.
