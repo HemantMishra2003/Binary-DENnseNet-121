@@ -32,12 +32,9 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 | **Validation Accuracy** | **97.02%** |
 | **Validation Loss**     | **0.0734** |
 
-
-The close alignment between training and validation performance indicates effective learning with controlled overfitting.
-
 ---
 
-### 🔍 Test Set Performance (Unseen Data)
+# Test Set Performance (Unseen Data)
 
 - **Test Accuracy:** **87.98%**
 
@@ -47,7 +44,6 @@ The close alignment between training and validation performance indicates effect
 |------------|-----------|--------|----------|---------|
 | Normal     | 97.60%    | 69.66% | 81.30%   | 234     |
 | Pneumonia | 84.46%    | 98.97% | 91.15%   | 390     |
-| **Overall Accuracy** | — | — | **87.98%** | 624     |
 
 ---
 
