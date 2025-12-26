@@ -52,7 +52,19 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 ### Training , Validation Loss Curves : 
 
-![Training & Validation Learning Curves](ModelPerformance/BinaryLossCurve.jpeg)
+    Loss
+    0.50 | _\____
+    0.40 |    \____
+    0.30 |         \____
+    0.20 |                _____________ Train
+    0.15 |           _____________ Validation
+    0.10 |
+    0.05 |
+        +-----------------------------------------
+        1   3   5   7   9   11  13  15  17  19
+                         Epochs
+
+
 
 
 
