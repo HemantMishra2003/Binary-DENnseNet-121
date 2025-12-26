@@ -133,12 +133,22 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                            
  # Installation & Setup : 
  
-  ### Follow the steps below to run this project locally and test the pneumonia detection model**
+  ### Follow the steps below to run this project locally and test the pneumonia detection model.
 
-  **1. Clone the repository:**
+  **1. Clone this repository:**
         
           git clone https://github.com/HemantMishra2003/Binary-DENnseNet-121.git
           cd Binary-DENnseNet-121
+          
+  **2. Install Python dependencies:**
+  
+             pip install -r requirements.txt
+             
+  **3. To run the Streamlit app and test the model:**
+  
+         streamlit run app.py
+
+
 
     
 
