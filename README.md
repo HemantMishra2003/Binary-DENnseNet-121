@@ -23,7 +23,8 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > Test datasets to present a transparent and comprehensive view
 > of its learning behavior and real-world generalization performance.
 
-# Training & Validation Performance :
+ **Training & Validation Performance** :
+**------------------------------------------**
 
   | **Metric**              | **Value** |
 |-------------------------|-----------|
