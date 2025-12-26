@@ -46,12 +46,17 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 | Pneumonia | 84.46%    | 98.97% | 91.15%   | 390     |
 
 ---
+# Recall Value Medical Interpretation : 
 
-### 🩺 Clinical Interpretation
+> - This  model achieves a **High Recall of 98.97% for Pneumonia**
+> - on the test set, demonstrating strong sensitivity toward pneumonia-positive cases.
+> - In Medical Recall Value  must be 100  Percent but due to limitations of GPU , 
+> - could not able to achive  **100 percent Recall value** . Since even missed while
+> - detecting only one time Disease  is **Dangerous in Medical Field** .
 
-- The model achieves a **high recall of 98.97% for Pneumonia** on the test set, demonstrating strong sensitivity toward pneumonia-positive cases.  
-- This is particularly important in medical screening scenarios, where **minimizing false negatives** is more critical than avoiding false positives.  
-- Although recall for the Normal class is lower, the overall behavior reflects a **safety-oriented design choice**, prioritizing detection of pneumonia cases.
+ - Although recall for the Normal class is lower,
+ - the overall behavior reflects a **safety-oriented  design choice**,
+ -  prioritizing detection of pneumonia cases.
 
 > **Note:**  
 > Final performance claims are based exclusively on **independent test data**. Training and validation metrics are reported only to illustrate learning behavior and are not used as indicators of real-world performance.
