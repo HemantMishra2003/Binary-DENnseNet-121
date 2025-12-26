@@ -6,22 +6,22 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 **Trained Model Link :** https://drive.google.com/file/d/1Wh1whE0yodOiUaLHr1pn2NU-_a6M4Wu-/view?usp=drivesdk
 
-# 🫁 Pneumonia Detection Model
+# 🫁 Pneumonia Detection Model :
 
-> This Pneumonia Detection System is a medically oriented project
-> designed to assist in the classification of chest X-ray images
-> into Normal and Pneumonia categories with high reliability.
-> The system is developed using **transfer learning** based on the
-> **Pretrained model** **DenseNet-121**,which is  trained over
-> the **millions  of feature image and thousands of classes** , this 
-> enables  effective feature extraction and
-> strong generalization on clinical imaging data.
+> This Pneumonia Detection System is a Medically oriented Project
+> Designed to assist in the Classification of Chest X-Ray images
+> Into Normal and Pneumonia categories with high reliability.
+> The system is developed using **Transfer Learning** Based on the
+> **Pretrained Model** **DenseNet-121**,which is  Trained over
+> The **Millions  of Feature Image and Thousands of Classes** , this 
+> Enables  effective feature extraction and
+> Strong generalization on clinical imaging data.
 
 ## Model Performance Metrics :
 
-> The model is evaluated across training, validation, and independent 
+> The model is evaluated across Training, Validation, and Independent 
 > Test datasets to present a transparent and comprehensive view
-> of its learning behavior and real-world generalization performance.
+> Of its Learning Behavior and Real-world Generalization Performance.
 
 ### Training & Validation Performance
 
@@ -92,16 +92,12 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 ---
 ### Recall Value Medical Interpretation : 
 
-> - This  model achieves a **High Recall of 98.97% for Pneumonia**
-> - on the test set, demonstrating strong sensitivity toward pneumonia-positive cases.
-> - In Medical Recall Value  must be 100  Percent but due to limitations of GPU , 
-> - could not able to achive  **100 percent Recall value** . Since even missed while
-> - detecting only one time Disease  is **Dangerous in Medical Field** .
+- This Model achieves a **High Recall of 98.97% for Pneumonia** on the Test Set, demonstrating strong sensitivity toward Pneumonia-Positive Cases.
+- In Medical screening tasks, Recall is critically important, as missing even a Single Disease case can be Dangerous.
+- Although an ideal recall value is close to **100%**, achieving perfect Recall is challenging due to practical limitations such as Dataset Variability and Computational constraints.
+- This Model is therefore designed to **Minimize False Negatives**, prioritizing patient safety over Conservative Predictions.
+- While Recall for the Normal class is comparatively lower, this reflects a **Safety-Oriented Design Choice** that emphasizes detecting pneumonia cases rather than risking missed diagnoses.
 
-- Although recall for the Normal class is lower,
-- the overall behavior reflects a **safety-oriented  design choice**,
-- prioritizing detection of pneumonia cases.
-- 
 # Our Model Architecture :
     
       [ Input Image 224x224x3 ] -> [ Data Augmentation ] -> [ Rescaling 1/255 ]
@@ -134,18 +130,18 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                            
  # Installation & Setup : 
  
-  ### Follow the steps below to run this project locally and test the pneumonia detection model.
+  ### Follow the steps below to Run this project locally and test the pneumonia detection model.
 
-  **1. Clone this repository:**
+  **1. Clone this Repository:**
         
           git clone https://github.com/HemantMishra2003/Binary-DENnseNet-121.git
           cd Binary-DENnseNet-121
           
-  **2. Install Python dependencies:**
+  **2. Install Python Dependencies:**
   
              pip install -r requirements.txt
              
-  **3. To run the Streamlit app and test the model:**
+  **3. To Run the Streamlit app and test the model:**
   
          streamlit run app.py
          
