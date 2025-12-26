@@ -25,12 +25,12 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 # Training & Validation Performance : (Best Epoch: 13/20)
 
-| Metric               | Value  |
-|----------------------|--------|
-| Training Accuracy    | 98.93% |
-| Training Loss        | 0.0395 |
-| Validation Accuracy  | 97.02% |
-| Validation Loss      | 0.0734 |
+    |**Metric** |                  |**Value**|
+|---------------------- |       |----------------|
+| **Training Accuracy**           | **98.93%** |
+| **Training Loss**               | **0.0395** |
+| **Validation Accuracy**         | **97.02%** |
+| **Validation Loss**             | **0.0734** |
 
 
 The close alignment between training and validation performance indicates effective learning with controlled overfitting.
