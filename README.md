@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 - the overall behavior reflects a **safety-oriented  design choice**,
 - prioritizing detection of pneumonia cases.
 - 
-# Our Neural Model Architecture : (DenseNet 121)
+# Our Model Architecture :
     
     [ Input Image 224x224x3 ] -> [ Data Augmentation ] -> [ Rescaling 1/255 ]
                                       |
@@ -117,7 +117,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                                       v
                      [ Softmax Output (Normal | Pneumonia) ]
                      
-#  Training Strategy : 
+#  Training Strategy (DenseNet 121) : 
     
      [ Freeze DenseNet-121 ] -> [ Train Classifier Head ]
                                       |
