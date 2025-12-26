@@ -100,21 +100,39 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 - Although recall for the Normal class is lower,
 - the overall behavior reflects a **safety-oriented  design choice**,
 - prioritizing detection of pneumonia cases.
+- 
+# Our Neural Model Architecture : (DenseNet 121)
+    
+    [ Input Image 224x224x3 ] -> [ Data Augmentation ] -> [ Rescaling 1/255 ]
+                                      |
+                                      v
+                         [ DenseNet-121 (ImageNet, no top) ]
+                                      |
+                                      v
+             [ Global Avg Pool ] -> [ BatchNorm ] -> [ Dropout 0.3 ]
+                                      |
+                                      v
+                   [ Dense 512 (ReLU) ] -> [ Dropout 0.2 ]
+                                      |
+                                      v
+                     [ Softmax Output (Normal | Pneumonia) ]
+                     
+#  Training Strategy : 
+    
+     [ Freeze DenseNet-121 ] -> [ Train Classifier Head ]
+                                      |
+                                      v
+                         [ Unfreeze from Layer 100 ]
+                                     |
+                                      v
+                        [ Fine-Tuning (Lower LR) ]
+                                     |
+                                      v
+                           [ Best Model Saved ]
 
- # Our Neural Model Architecture :
-  ```text
-```text
-[ Input Image ]
-→ [ Augmentation ]
-→ [ Rescaling ]
-→ [ DenseNet-121 ]
-→ [ GAP ]
-→ [ BatchNorm ]
-→ [ Dropout 0.3 ]
-→ [ Dense 512 ]
-→ [ Dropout 0.2 ]
-→ [ Softmax (2 Classes) ]
-```
+ 
+
+    
 
      
 
