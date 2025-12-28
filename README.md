@@ -187,10 +187,10 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > Suggestions for improvements, bug fixes, documentation enhancements, 
 > and feature ideas are always welcome.
 
-
-
-
-    
+ # Thanks Section 🙏
+  _____________________
+         Thanks to my super senior Vishwas Mishra(Rolls Royce), who keeps motivating me
+                   and continuously helps me to improve my skills.” ❤️
 
      
 
