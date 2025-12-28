@@ -109,33 +109,48 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 
 # Our Model Architecture :
     
-      [ Input Image 224x224x3 ] -> [ Data Augmentation ] -> [ Rescaling 1/255 ]
-                                      |
-                                      v
-                         [ DenseNet-121 (ImageNet, no top) ]
-                                      |
-                                      v
-             [ Global Avg Pool ] -> [ BatchNorm ] -> [ Dropout 0.3 ]
-                                      |
-                                      v
-                   [ Dense 512 (ReLU) ] -> [ Dropout 0.2 ]
-                                      |
-                                      v
-                     [ Softmax Output (Normal | Pneumonia) ]
+     ____________________           _________________________         ________________________
+    |    Input Image     |         |                         |       |                       |
+    |    224 x 224 x 3   |-------->|  Data Augmentation      |------>|  Rescaling (1 / 255)  |
+    |____________________|         |_________________________|       |_______________________| 
+                                              |
+                         _____________________v________________________
+                        |               DenseNet-121               
+                        | Pretrained on ImageNet (include_top = False) |                            
+                        |______________________________________________|
+                                             |
+                                             v
+      ____________________________     ________________________     ____________________________
+     |  Global Average Pooling    |-->|  Batch Normalization   | -->|   Dropout (0.3)           |
+     |____________________________|   |________________________|    |___________________________|
+                                            |
+                                            v
+             ____________________________     ______________________
+            |  Dense Layer (512 units)   |--> |                    |     
+            |  Activation : ReLU         |    |    Dropout (0.2)   |  
+            | ___________________________|    |____________________|
+                                           |
+                                           v
+                         ______________________________________
+                        |         Softmax Output Layer        |                           
+                        |      Classes : Normal | Pneumonia   |                                
+                        |_____________________________________|
                      
 #  Training Strategy (DenseNet 121) : 
-    
-      [ Freeze DenseNet-121 ] -> [ Train Classifier Head ]
-                                      |
-                                      v
-                         [ Unfreeze from Layer 100 ]
-                                      |
-                                      v
-                        [ Fine-Tuning (Lower LR) ]
-                                      |
-                                      v
-                           [ Best Model Saved ]
 
+     ┌──────────────────────────────┐    ┌────────────────────────────────┐
+     │  Freeze EfficientNet-B3      │ ──> │  Train Classifier Head        │
+     └──────────────────────────────┘    └────────────────────────────────┘
+                                              |
+                                              |
+     ┌──────────────────────────────       ┌────────────────────────────────┐
+     │  Unfreeze from Layer 100     │ ──>  │  Fine-Tuning (Lower LR)        │
+     └──────────────────────────────┘      └────────────────────────────────┘
+                                              |
+                                              |
+                             ┌──────────────────────────────┐
+                             │       Best Model Saved       │
+                             └──────────────────────────────┘
                            
  # Installation & Setup : 
  
