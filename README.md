@@ -94,6 +94,7 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 | Normal     | 97.60%    | 69.66% | 81.30%   | 234     |
 | Pneumonia | 84.46%    | 98.97% | 91.15%   | 390     |
 
+
 ---
 ### Recall Value Medical Interpretation : 
 
@@ -107,7 +108,34 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
 > - achieving perfect Recall is challenging  due to practical limitations
 > - such as Dataset Variability and Computational constraints.
 
+
+## Biggest Challenge
+_________________________
+
+#### Handling Class Imbalance.
+
+> The model tended to favor the majority class (Pneumonia).
+> Risk of misclassifying Normal patients,
+> which is unacceptable in medical diagnosis.
+> High accuracy alone was misleading without balanced recall.
+
+ **Solution Implemented**
+ 
+    class_weights = {
+    
+       0: 1.66,    Normal
+       
+       1: 1.0      Pneumonia
+    }
+    
+- While in training we Assigned weightage sytem to class.
+- we incresed the Weightage to Normal class because
+- due to lesser quantity of Normal class data .Model was getting 
+- baised so we increased the weightage to Normal class 
+- and  then  precion recall of both class were predicting better .
+
 # Our Model Architecture :
+_______________________________
     
      ____________________           _________________________         ________________________
     |    Input Image     |         |                         |       |                       |
@@ -136,7 +164,8 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                         |      Classes : Normal | Pneumonia   |                                
                         |_____________________________________|
                      
-#  Training Strategy (DenseNet 121) : 
+#  Training Strategy (DenseNet 121) :
+__________________________________________
 
      ┌──────────────────────────────┐    ┌────────────────────────────────┐
      │  Freeze EfficientNet-B3      │ ──> │  Train Classifier Head        │
@@ -153,12 +182,15 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
                              └──────────────────────────────┘
                            
  # Installation & Setup : 
+ _____________________________
  
   ### Follow the steps below to Run this project locally and test the Pneumonia Detection Model.
 
   **1. Clone this Repository:**
         
           git clone https://github.com/HemantMishra2003/Binary-DENnseNet-121.git
+          cd Binary-DENnseNet-121
+
           
           
   **2. Install Python Dependencies:**
@@ -175,7 +207,8 @@ https://github.com/user-attachments/assets/119d84d9-ada3-4786-8e24-5df62cdd6eab
        to get bactarial and normal x ray image to make prediction.
   
 
-# How can you Contribute : 
+# How can you Contribute :
+_______________________________
 
 > If you would like to contribute to this Project, please follow these steps:
 
